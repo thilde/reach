@@ -1,12 +1,14 @@
 <div class="{{ 'lg:fixed' if path == 'home' }} w-full">
     <nav class="container flex flex-wrap items-center justify-center p-6 mx-auto lg:justify-between lg:px-0" x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
         <!--Logo etc-->
+        <!--
         <div class="flex items-center">
             <a href="/">
                 <img src="/static/img/reachadvertising_logo.png" width="250px" alt="Reach Advertising">
             </a>
         </div>
-
+        -->
+        
         <!--Toggle button (hidden on large screens)-->
         <button @click="isOpen = !isOpen" type="button" class="block px-2 ml-auto lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu">
             <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
